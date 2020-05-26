@@ -2,14 +2,9 @@ cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
 project(third_parties)
 
-set(INCLUDES
-    header/print.h
-    header/multiplier.h)
-
 add_library(print SHARED src/print.cpp)
+target_include_directories(print PUBLIC include)
+
 add_library(multiplier SHARED src/multiplier.cpp)
+target_include_directories(multiplier PUBLIC include)
 
-install(TARGETS print DESTINATION ${CMAKE_SOURCE_DIR}/lib)
-install(TARGETS multiplier DESTINATION ${CMAKE_SOURCE_DIR}/lib)
-
-install(FILES ${INCLUDES} DESTINATION ${CMAKE_SOURCE_DIR}/lib/include)

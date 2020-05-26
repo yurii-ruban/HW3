@@ -3,9 +3,9 @@ If iostream is included at the beginning of the file it will be redundant in cas
 USE_STRING_FUNC is set*/
 
 #ifdef USE_STRING_FUNC
-    #include "lib/include/print.h"
+    #include "print.h"
 #else
-    #include "lib/include/multiplier.h"
+    #include "multiplier.h"
     #include <iostream>
 #endif
 

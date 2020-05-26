@@ -1,4 +1,4 @@
-#include "../include/print.h"
+#include "print.h"
 
 void printString(const std::string& s)
 {

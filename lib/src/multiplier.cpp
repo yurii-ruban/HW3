@@ -1,4 +1,4 @@
-#include "../include/multiplier.h"
+#include "multiplier.h"
 
 int makeDouble(int number)
 {
