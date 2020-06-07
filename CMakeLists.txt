@@ -11,10 +11,9 @@ add_executable(testapp ${SOURCES})
 target_include_directories(testapp PUBLIC include)
 
 if(USE_STRING_FUNC)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DUSE_STRING_FUNC")
+    add_definitions(-DUSE_STRING_FUNC)
     target_link_libraries(testapp print)
 else()
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
     target_link_libraries(testapp multiplier)
+
 endif(USE_STRING_FUNC)
-unset(USE_STRING_FUNC CACHE)
