@@ -1,6 +1,6 @@
 # Homework Task 6
 
-This is the program, that use 2 shared libraries and prints their parameters. Also the Array library is added and simply tested in main.
+This is the program, that use 2 shared libraries and prints their parameters. Also the Matrix library is added and simply tested in main.
 Technologies: C++, CMake
 
 ## How to check

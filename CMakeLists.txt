@@ -10,3 +10,4 @@ target_include_directories(testapp PUBLIC include)
 
 target_link_libraries(testapp print)
 target_link_libraries(testapp multiplier)
+target_link_libraries(testapp matrix)
